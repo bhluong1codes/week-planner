@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Comic Neue", cursive;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-100 {
+  flex-basis: 100%;
+}
+
+.col-25 {
+  flex-basis: 100%;
+}
+
+.add-entry-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+}
+
+.add-entry-btn {
+  position: absolute;
+  top: 15%;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  margin-bottom: 20px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 80%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 9999;
+}
+
+.modal {
+  position: relative;
+  top: 15%;
+  text-align: center;
+  background-color: #fff;
+  width: 600px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+
+.x-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button:hover,
+.fa-times-circle:hover {
+  cursor: pointer;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+}
+
+select,
+textarea,
+input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Comic Neue", cursive;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+#submit {
+  float: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-25 {
+    flex-basis: inherit;
+  }
+
+  select#time {
+    margin-left: 15px;
+  }
+}
